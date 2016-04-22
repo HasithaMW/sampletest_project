@@ -1,0 +1,1 @@
+<marquee behavior="alternate" scrolldelay="200"> &copy; Hasitha Creations - Bemmulla. </marquee>

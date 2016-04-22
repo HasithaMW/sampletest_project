@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+<definition name="jsp.Home" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/template/defaultContent.jsp"/>
+</definition>
+
+<definition name="jsp.Login" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/User/Login.jsp"/>
+</definition>
+
+<!-- <definition name="init.Login" extends="defaultTemplate"> -->
+<!-- 	<put-attribute name="body" value="/WEB-INF/jsp/User/Login.jsp"/> -->
+<!-- </definition> -->
+
+<definition name="jsp.Signup" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/User/Signup.jsp"/>
+</definition>
+
+<definition name="jsp.HomePage" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/HomePage.jsp"/>
+</definition>
+<definition name="jsp.Employee" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/Employee/EmployeeForm.jsp"/>
+</definition>
+
+<definition name="jsp.EmployeeUpdate" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/Employee/Update.jsp"/>
+</definition>
+
+<!-- <definition name="index.tile" extends="defaultTemplate"> -->
+<!-- 	<put-attribute name="content" value="/WEB-INF/jsp/index.jsp"/> -->
+<!-- </definition> -->
+
+<!-- <definition name="login.tile" extends="defaultTemplate"> -->
+<!-- 	<put-attribute name="content" value="/WEB-INF/jsp/login.jsp"/> -->
+<!-- </definition> -->
+
+<definition name="init.Login" extends="subTemplate">
+	<put-attribute name="mainContent" value="/WEB-INF/jsp/User/Login.jsp"/>
+</definition>
+
+<definition name="init.Emp" extends="defaultTemplate">
+	<put-attribute name="body" value="/WEB-INF/jsp/Employee/EmpTest.jsp"/>
+</definition>
+
+<definition name="init.Emp1" extends="subTemplate">
+	<put-attribute name="mainContent" value="/WEB-INF/jsp/Employee/EmpTest.jsp"/>
+</definition>
+
+
+</tiles-definitions>
